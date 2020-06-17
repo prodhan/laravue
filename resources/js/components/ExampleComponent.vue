@@ -1,16 +1,19 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
+    <div>
+    <v-container>
+            <v-alert v-model="alert"
+                     border="left"
+                     close-text="Close Alert"
+                     color="deep-purple accent-4"
+                     dark
+                     dismissible>
+                I'm a success alert.
+            </v-alert>
+            <v-btn link to="/foo">Foo</v-btn>
+            <v-btn link to="/bar">Bar</v-btn>
+            <router-view></router-view>
 
-                    <div class="card-body">
-                        I'm an example component.
-                    </div>
-                </div>
-            </div>
-        </div>
+    </v-container>
     </div>
 </template>
 
